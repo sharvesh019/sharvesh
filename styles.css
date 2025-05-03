@@ -73,4 +73,7 @@ body {
   object-fit: cover;
   margin-top: 2rem;
 }
+.content {
+  opacity: 0;
+}
 

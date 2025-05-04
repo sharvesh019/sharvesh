@@ -391,6 +391,17 @@ html {
 .about-box {
   animation: slideUp 1s ease-in-out both;
 }
+/* Control the padding and margin of all sections */
 .section {
-  padding: 2rem 0; /* Reduced padding (top/bottom) */
+  padding: 2rem 0; /* Smaller padding */
+  margin-bottom: 2rem; /* Reduced space between sections */
+}
+
+/* You can fine-tune the space for specific sections too */
+#landing {
+  margin-bottom: 1rem; /* Tighter space after landing page */
+}
+
+#about, #projects, #contact {
+  margin-top: 1rem; /* Smaller gap when scrolling */
 }

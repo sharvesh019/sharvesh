@@ -111,7 +111,7 @@ a {
 
 /* Profile Image */
 .profile-container {
-  width: 1500px; /* Increase width for more oval shape */
+  width: 1000px; /* Increase width for more oval shape */
   height: 350px; /* Adjust height for better aspect ratio */
   overflow: hidden;
   border-radius: 70% 30% 30% 70%; /* Oval shape */
@@ -139,21 +139,21 @@ a {
 }
 
 .left-content {
-  width: 45%;
+  width: 35%;
 }
 
 .right-content {
-  width: 55%;
+  width: 40%;
 }
 
 .about-me {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .about-paragraph {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 1.6;
   margin-bottom: 1rem;
 }

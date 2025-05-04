@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +6,10 @@
 }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #003c2f, #145a32, #1e8449);
   color: #ffffff;
-  background-color: #121212;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 a {
   color: inherit;
@@ -19,17 +21,17 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #1f1f1f;
+  background-color: rgba(0, 50, 30, 0.9);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 999;
+  z-index: 100;
 }
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  color: #00ffcc;
+  color: #7CFC00;
 }
 .nav-links {
   list-style: none;
@@ -37,67 +39,68 @@ a {
   gap: 1.5rem;
 }
 .nav-links li a {
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 .nav-links li a:hover {
-  color: #00ffcc;
+  color: #7CFC00;
 }
 
 /* Hero Section */
-.section.full-screen {
-  height: 100vh;
+.landing-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 100px;
+  min-height: 100vh;
+  text-align: center;
 }
-.hero-section {
+.hero {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 2rem;
 }
-.content h1 {
-  font-size: 3rem;
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
-.tagline {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  color: #00ffcc;
+.highlight {
+  color: #7CFC00;
 }
-.profile-pic img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #00ffcc;
+.typewriter {
+  font-size: 1.2rem;
+  color: #caffd0;
 }
-
-/* Quote */
-.quote {
-  text-align: center;
-  margin-top: 3rem;
-}
-.quote-text {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: #ffffff;
-}
-.quote-text span {
-  color: #00ffcc;
-  font-weight: bold;
-}
-
-/* Typewriter Cursor */
 .cursor {
   display: inline-block;
-  width: 1px;
-  background-color: #00ffcc;
+  width: 2px;
+  height: 1.2rem;
+  background-color: #7CFC00;
   animation: blink 0.7s steps(2, start) infinite;
-  margin-left: 2px;
+}
+.hero-img img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 4px solid #7CFC00;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
 
+/* Quote */
+.quote {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #eeeeee;
+}
+.quote-highlight {
+  color: #7CFC00;
+  font-weight: bold;
+}

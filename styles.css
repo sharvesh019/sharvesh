@@ -391,3 +391,6 @@ html {
 .about-box {
   animation: slideUp 1s ease-in-out both;
 }
+.section {
+  padding: 4rem 2rem;
+}

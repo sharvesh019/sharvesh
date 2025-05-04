@@ -275,3 +275,13 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+/* Reduce gap between landing and about section */
+.landing-section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.about-section {
+  margin-top: 0;
+  padding-top: 0;
+}

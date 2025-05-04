@@ -47,38 +47,36 @@
 </footer>
 
 </body>
- <!DOCTYPE html>
-<html lang="en">
+<!-- about.html -->
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Sharvesh</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <title>About Me</title>
+  <link rel="stylesheet" href="../css/about.css" />
 </head>
-<body class="about-body">
-
-  <!-- Profile Section -->
-  <section class="profile-section">
-    <img src="https://media-hosting.imagekit.io/c3d84c55b34c4632/IMG-20241119-WA0011.jpg?..." alt="Profile Picture" class="profile-pic fade-in" />
-    <h1 class="fade-in">Sharvesh S</h1>
-    <h2 class="fade-in">Biomedical Engineer</h2>
-  </section>
-
-  <!-- Navigation Tabs -->
-  <nav class="about-tabs fade-in">
-    <button onclick="location.href='education.html'">Education</button>
-    <button onclick="location.href='skills.html'">Skills</button>
-    <button onclick="location.href='hobbies.html'">Hobbies</button>
+<body>
+  <nav class="navbar">
+    <div class="logo">My Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="../html/index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="../html/projects.html">Projects</a></li>
+      <li><a href="../html/contact.html">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- Footer Quote & ECG (already included on your main page if reused) -->
-  <div class="ecg-quote-container">
-    <div class="ecg-wave"></div>
-    <p class="quote fade-type">“We do not just build devices—we build hope, healing, and the future of medicine.”</p>
-  </div>
+  <section class="about-main">
+    <div class="profile-image">
+      <img src="https://media-hosting.imagekit.io/c3d84c55b34c4632/IMG-20241119-WA0011.jpg" alt="Profile Picture">
+    </div>
+    <div class="box-container">
+      <a href="education.html" class="info-box">Education</a>
+      <a href="skills.html" class="info-box">Skills</a>
+      <a href="hobbies.html" class="info-box">Hobbies</a>
+    </div>
+  </section>
 
+  <script src="../js/about.js"></script>
 </body>
 </html>
- 
-

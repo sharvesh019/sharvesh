@@ -105,11 +105,11 @@ body {
   width: 200%;
   background: url('https://media-hosting.imagekit.io/2354702a130440d7/ecg-green-theme.gif') repeat-x;
   background-size: contain;
-  animation: scroll-wave 7s linear infinite;
+  animation: scroll-wave 5s linear infinite;
   z-index: 1;
 }
 
-/* Keyframe for scrolling ECG animation */
+/* Keyframe for scrolling ECG animation (increased speed) */
 @keyframes scroll-wave {
   0% {
     transform: translateX(0);

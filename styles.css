@@ -51,15 +51,17 @@ a {
 .landing-section {
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end; /* Aligning to the right side */
   align-items: center;
   padding-top: 5rem;
-  position: relative; /* Ensure it doesn't affect scrolling */
+  position: relative;
 }
 
 .left-content {
   max-width: 50%;
+  padding-left: 3rem; /* Add space between the text and image */
 }
+
 .left-content h1 {
   font-size: 4rem;
   line-height: 1.2;
@@ -109,10 +111,10 @@ a {
 
 /* Profile Image */
 .profile-container {
-  width: 500px; /* Increased width */
-  height: 600px; /* Increased height */
+  width: 600px; /* Increase width for more oval shape */
+  height: 350px; /* Adjust height for better aspect ratio */
   overflow: hidden;
-  border-radius: 50% 45% 40% 55% / 60% 40% 60% 40%;
+  border-radius: 70% 30% 30% 70%; /* Oval shape */
   box-shadow: 0 0 40px rgba(168, 255, 96, 0.25);
   transition: transform 0.3s ease;
   border: 3px solid #a8ff60;
@@ -132,27 +134,32 @@ a {
 .about-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; /* Align content to the top */
   padding: 4rem 2rem;
-  margin-top: 0; /* Remove unnecessary space */
 }
 
 .left-content {
-  width: 50%;
+  width: 45%;
 }
 
 .right-content {
   width: 45%;
 }
 
+.about-me {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .about-paragraph {
   font-size: 1.2rem;
   line-height: 1.6;
-  width: 60%;
+  margin-bottom: 1rem;
 }
 
 .profile-container {
-  width: 30%;
+  width: 100%;
 }
 
 .profile-pic {

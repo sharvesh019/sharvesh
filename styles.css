@@ -129,17 +129,20 @@ a {
 }
 
 /* About Section */
+/* About Section */
 .about-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 4rem 3rem;
+  padding: 3rem 3rem 1rem 3rem;
+  gap: 2rem;
+  margin-top: 0;
   flex-wrap: wrap;
 }
 
 .about-left {
-  width: 50%;
-  text-align: left;
+  flex: 1;
+  min-width: 280px;
 }
 
 .about-left h2 {
@@ -151,13 +154,15 @@ a {
 .about-paragraph {
   font-size: 1.1rem;
   line-height: 1.6;
-  max-width: 400px;
-  margin-bottom: 1rem;
+  margin-right: 3rem;
+  max-width: 450px;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .about-right {
-  width: 40%;
+  flex: 1;
+  min-width: 280px;
   display: flex;
   justify-content: center;
 }
@@ -176,7 +181,7 @@ a {
   object-fit: cover;
 }
 
-/* Subpage Cards Styling */
+/* Subpage Cards */
 .subpage-links {
   display: flex;
   justify-content: center;
@@ -184,6 +189,7 @@ a {
   margin-top: 3rem;
   flex-wrap: wrap;
 }
+
 
 .subpage-card {
   background-color: #a8ff60;

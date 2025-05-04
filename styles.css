@@ -51,17 +51,16 @@ a {
 .landing-section {
   height: 100vh;
   display: flex;
-  justify-content: flex-end; /* Aligning to the right side */
+  justify-content: space-between;
   align-items: center;
-  padding-top: 5rem;
-  position: relative;
+  padding: 5rem 3rem 2rem 3rem;
 }
 
 .left-content {
-  max-width: 50%;
-  padding-left: 3rem; /* Add space between the text and image */
+  max-width: 45%;
+  text-align: left;
+  margin-left: 2rem;
 }
-
 .left-content h1 {
   font-size: 4rem;
   line-height: 1.2;
@@ -109,80 +108,86 @@ a {
   transform: translateY(-2px);
 }
 
-/* Profile Image */
+/* Profile Image in Landing Page */
 .profile-container {
-  width: 800px; /* Increase width for more oval shape */
-  height: 350px; /* Adjust height for better aspect ratio */
+  width: 350px;
+  height: 550px;
   overflow: hidden;
-  border-radius: 70% 30% 30% 70%; /* Oval shape */
+  border-radius: 50% / 40%;
   box-shadow: 0 0 40px rgba(168, 255, 96, 0.25);
   transition: transform 0.3s ease;
   border: 3px solid #a8ff60;
+  margin-right: 2rem;
 }
-
 .profile-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .profile-container:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
-/* About Section Styling */
+/* About Section */
 .about-section {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Align content to the top */
-  padding: 5rem 2rem;
+  align-items: flex-start;
+  padding: 4rem 3rem;
+  flex-wrap: wrap;
 }
 
-.left-content {
-  width: 55%;
+.about-left {
+  width: 50%;
+  text-align: left;
 }
 
-.right-content {
-  width: 40%;
-}
-
-.about-me {
-  font-size: 3rem;
-  font-weight: bold;
+.about-left h2 {
+  font-size: 2.5rem;
+  color: #a8ff60;
   margin-bottom: 1rem;
 }
 
 .about-paragraph {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   line-height: 1.6;
+  max-width: 400px;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
-.profile-container {
-  width: 100%;
+.about-right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 
-.profile-pic {
+.profile-container.about-img {
+  width: 300px;
+  height: 400px;
+  border-radius: 50%;
+  border: 4px solid #a8ff60;
+  overflow: hidden;
+}
+
+.profile-container.about-img img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #a8ff60;
-  transition: transform 0.3s ease;
-}
-
-.profile-pic:hover {
-  transform: scale(1.1);
 }
 
 /* Subpage Cards Styling */
 .subpage-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   margin-top: 3rem;
+  flex-wrap: wrap;
 }
 
 .subpage-card {
+  background-color: #a8ff60;
+  color: #003322;
   padding: 2rem;
   border-radius: 20px;
   width: 200px;
@@ -201,6 +206,7 @@ a {
 }
 
 .subpage-card:hover {
+  background-color: #7fe850;
   transform: scale(1.05);
 }
 
@@ -210,95 +216,46 @@ a {
   font-weight: bold;
 }
 
-/* Luxurious Color Schemes for Cards */
-.subpage-card:nth-child(1) {
-  background-color: #A1C6EA; /* Luxurious Blue */
-}
-
-.subpage-card:nth-child(2) {
-  background-color: #F7C6A3; /* Luxurious Orange */
-}
-
-.subpage-card:nth-child(3) {
-  background-color: #B0E57C; /* Luxurious Green */
-}
-
 .subpage-card:hover a {
   color: #003322;
 }
 
-/* Animations for Fade-in and Entrance Effects */
+/* Animations */
 @keyframes fade-in-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
 }
-
 @keyframes fade-in-right {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
 }
-
 @keyframes fade-in-up {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .fade-in-left {
   animation: fade-in-left 1s ease-out;
 }
-
 .fade-in-right {
   animation: fade-in-right 1s ease-out;
 }
-
 .fade-in-up {
   animation: fade-in-up 1s ease-out;
 }
 
-/* Smooth scroll behavior */
+/* Other base settings */
 html {
   scroll-behavior: smooth;
 }
-
-/* Section base style */
 .section {
-  height: auto; /* Allow sections to have dynamic height */
-  padding: 2rem 0; /* Reduced padding for a tighter look */
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem; /* Reduced space between sections */
+  margin-bottom: 2rem;
 }
-
-/* Slide-in Animations */
-#landing {
-  margin-bottom: 0; /* Remove margin after the landing page */
-}
-
-#about, #projects, #contact {
-  margin-top: 0;
-  margin-bottom: 2rem; /* Small margin between sections */
-}
-
 .section.visible {
   opacity: 1;
   transform: translateY(0);

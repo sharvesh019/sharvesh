@@ -90,15 +90,26 @@ a {
 .cta-button {
   margin-top: 2rem;
   display: inline-block;
-  padding: 1.2rem 2.4rem;
+  padding: 1rem 2rem; /* Reduced padding to make the button slightly smaller */
   background-color: #a8ff60;
   color: #003322;
   border-radius: 35px;
   font-weight: bold;
-  transition: background 0.3s;
+  font-size: 1.1rem; /* Slightly increased font size for better visibility */
+  text-transform: uppercase; /* Added to highlight the text more */
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for highlighting */
 }
+
 .cta-button:hover {
   background-color: #7fe850;
+  transform: translateY(-2px); /* Slightly lifts the button on hover */
+}
+
+.quote {
+  margin-bottom: 0.5rem; /* Small space below the quote */
+}
+
 }
 
 /* Profile Image */

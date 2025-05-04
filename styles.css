@@ -86,31 +86,32 @@ a {
   50% { border-color: transparent; } /* This controls the blinking effect */
 }
 
-}
+
 .cta-button {
   margin-top: 2rem;
   display: inline-block;
-  padding: 1rem 2rem; /* Reduced padding to make the button slightly smaller */
+  padding: 0.8rem 1.6rem; /* Smaller padding for a smaller button */
   background-color: #a8ff60;
   color: #003322;
   border-radius: 35px;
   font-weight: bold;
-  font-size: 1.1rem; /* Slightly increased font size for better visibility */
-  text-transform: uppercase; /* Added to highlight the text more */
+  font-size: 1.1rem; /* Slightly bigger text for visibility */
+  text-transform: uppercase; /* Text becomes uppercase to highlight it */
   transition: background 0.3s, transform 0.2s;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for highlighting */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow effect for highlight */
 }
 
 .cta-button:hover {
   background-color: #7fe850;
-  transform: translateY(-2px); /* Slightly lifts the button on hover */
+  transform: translateY(-2px); /* Button lift effect on hover */
 }
 
 .quote {
-  margin-bottom: 0.5rem; /* Small space below the quote */
+  margin-bottom: 1rem; /* Adding more space below the quote */
 }
 
-}
+
+
 
 /* Profile Image */
 .profile-container {

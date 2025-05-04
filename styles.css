@@ -128,8 +128,7 @@ a {
   transform: scale(1.05);
 }
 
-/* About Section */
-/* About Section */
+
 /* About Section */
 .about-section {
   display: flex;
@@ -137,7 +136,7 @@ a {
   align-items: center;
   padding: 2rem 3rem;
   gap: 2rem;
-  margin: 0; /* Removes extra space between sections */
+  margin: 1; /* Removes extra space between sections */
   flex-wrap: wrap;
 }
 

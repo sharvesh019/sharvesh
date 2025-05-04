@@ -90,10 +90,10 @@ a {
 .cta-button {
   margin-top: 2rem;
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: 1.2rem 2.4rem;
   background-color: #a8ff60;
   color: #003322;
-  border-radius: 25px;
+  border-radius: 35px;
   font-weight: bold;
   transition: background 0.3s;
 }

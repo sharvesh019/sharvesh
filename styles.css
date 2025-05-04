@@ -54,7 +54,9 @@ a {
   justify-content: space-around;
   align-items: center;
   padding-top: 5rem;
+  position: relative; /* Make sure it's not affecting scrolling */
 }
+
 .left-content {
   max-width: 50%;
 }
@@ -63,6 +65,7 @@ a {
   line-height: 1.2;
   margin-bottom: 1rem;
 }
+
 .highlight {
   color: #a8ff60;
 }
@@ -74,11 +77,13 @@ a {
   width: 0;
   animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
 }
+
 @keyframes typing {
   0% { width: 0; }
   90% { width: 100%; }
   100% { width: 100%; border-right: 2px solid transparent; }
 }
+
 @keyframes blink {
   50% { border-color: transparent; }
 }
@@ -128,7 +133,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3rem 5%;
+  padding: 4rem 2rem;
+  margin-top: 0; /* Remove unnecessary space */
 }
 
 .about-paragraph {
@@ -249,37 +255,26 @@ html {
 
 /* Section base style */
 .section {
-  min-height: 100vh;
-  padding: 5rem 2rem;
+  height: auto; /* Allow sections to have dynamic height */
+  padding: 2rem 0; /* Reduced padding for a tighter look */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s ease-in-out;
+  margin-bottom: 2rem; /* Reduced space between sections */
 }
 
-/* Fade-in animation */
-.section.fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+/* Slide-in Animations */
+#landing {
+  margin-bottom: 0; /* Remove margin after the landing page */
+}
+
+#about, #projects, #contact {
+  margin-top: 0;
+  margin-bottom: 2rem; /* Small margin between sections */
 }
 
 .section.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* Reducing the space between sections */
-.section {
-  padding: 2rem 0; /* Reduced padding for a tighter look */
-  margin-bottom: 2rem; /* Reduced space between sections */
-}
-
-/* Specific Adjustments for Individual Sections */
-#landing {
-  margin-bottom: 1rem; /* Tighter space after landing page */
-}
-
-#about, #projects, #contact {
-  margin-top: 1rem; /* Reduced gap when scrolling */
 }

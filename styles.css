@@ -111,7 +111,7 @@ a {
 
 /* Profile Image */
 .profile-container {
-  width: 1000px; /* Increase width for more oval shape */
+  width: 800px; /* Increase width for more oval shape */
   height: 350px; /* Adjust height for better aspect ratio */
   overflow: hidden;
   border-radius: 70% 30% 30% 70%; /* Oval shape */
@@ -127,7 +127,7 @@ a {
 }
 
 .profile-container:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 /* About Section Styling */
@@ -135,11 +135,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; /* Align content to the top */
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
 }
 
 .left-content {
-  width: 35%;
+  width: 55%;
 }
 
 .right-content {

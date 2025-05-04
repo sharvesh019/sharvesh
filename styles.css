@@ -73,15 +73,19 @@ a {
   overflow: hidden;
   border-right: 2px solid #a8ff60;
   width: 0;
-  animation: typing 4s steps(40, end) forwards, blink 0.75s step-end 4;
+  animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
 }
+
 @keyframes typing {
   0% { width: 0; }
   90% { width: 100%; }
-  100% { width: 0; border: none; }
+  100% { width: 100%; border-right: 2px solid transparent; } /* Keep text visible, hide the cursor */
 }
+
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% { border-color: transparent; } /* This controls the blinking effect */
+}
+
 }
 .cta-button {
   margin-top: 1.5rem;

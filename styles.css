@@ -54,7 +54,7 @@ a {
   justify-content: space-around;
   align-items: center;
   padding-top: 5rem;
-  position: relative; /* Make sure it's not affecting scrolling */
+  position: relative; /* Ensure it doesn't affect scrolling */
 }
 
 .left-content {
@@ -109,8 +109,8 @@ a {
 
 /* Profile Image */
 .profile-container {
-  width: 400px;
-  height: 500px;
+  width: 500px; /* Increased width */
+  height: 600px; /* Increased height */
   overflow: hidden;
   border-radius: 50% 45% 40% 55% / 60% 40% 60% 40%;
   box-shadow: 0 0 40px rgba(168, 255, 96, 0.25);
@@ -135,6 +135,14 @@ a {
   align-items: center;
   padding: 4rem 2rem;
   margin-top: 0; /* Remove unnecessary space */
+}
+
+.left-content {
+  width: 50%;
+}
+
+.right-content {
+  width: 45%;
 }
 
 .about-paragraph {
@@ -168,8 +176,6 @@ a {
 }
 
 .subpage-card {
-  background-color: #a8ff60;
-  color: #003322;
   padding: 2rem;
   border-radius: 20px;
   width: 200px;
@@ -188,7 +194,6 @@ a {
 }
 
 .subpage-card:hover {
-  background-color: #7fe850;
   transform: scale(1.05);
 }
 
@@ -196,6 +201,19 @@ a {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
+}
+
+/* Luxurious Color Schemes for Cards */
+.subpage-card:nth-child(1) {
+  background-color: #A1C6EA; /* Luxurious Blue */
+}
+
+.subpage-card:nth-child(2) {
+  background-color: #F7C6A3; /* Luxurious Orange */
+}
+
+.subpage-card:nth-child(3) {
+  background-color: #B0E57C; /* Luxurious Green */
 }
 
 .subpage-card:hover a {

@@ -84,17 +84,17 @@ body {
   background-color: #03140f;
 }
 
-/* Section for ECG and Quote */
+
+/* Fix Quote Section to Align Properly */
 .quote-section {
   width: 100%;
   height: 180px;
   margin-top: -20px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Centers the quote properly */
   align-items: center;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .ecg-section {
@@ -104,7 +104,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: -80px; /* move up slightly */
+  margin-top: -80px;
   overflow: hidden;
 }
 
@@ -123,16 +123,17 @@ body {
   width: 200%;
   background: url('https://media-hosting.imagekit.io/2354702a130440d7/ecg-green-theme.gif') repeat-x;
   background-size: contain;
-  animation: scroll-wave 5s linear infinite;
+  animation: scroll-wave 7s linear infinite; /* Adjust animation speed */
   z-index: 1;
 }
 
+/* Keyframe for scrolling from left to right across the screen */
 @keyframes scroll-wave {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%); /* Moves across the full screen */
   }
 }
 
@@ -143,12 +144,15 @@ body {
   font-weight: 500;
   color: #ffffff;
   text-align: center;
-  margin-top: 60px;
   padding: 0 20px;
 }
 
 .quote span {
   color: #21e07b;
+  font-weight: bold;
+  text-shadow: 0 0 5px #21e07b;
+}
+
   font-weight: bold;
   text-shadow: 0 0 5px #21e07b;
 }

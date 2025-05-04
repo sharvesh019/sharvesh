@@ -392,5 +392,5 @@ html {
   animation: slideUp 1s ease-in-out both;
 }
 .section {
-  padding: 3rem 2rem;
+  padding: 2rem 0; /* Reduced padding (top/bottom) */
 }

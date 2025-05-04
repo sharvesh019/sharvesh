@@ -1,14 +1,19 @@
-// Typewriter effect
-const text = "Biomedical Engineer";
-let i = 0;
-const speed = 100;
-const typedText = document.getElementById("typed-text");
+// Scroll fade-in effect for any .fade-in classes
+document.addEventListener("DOMContentLoaded", () => {
+  const faders = document.querySelectorAll('.fade-in');
 
-function typeWriter() {
-  if (i < text.length) {
-    typedText.innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-window.onload = typeWriter;
+  const appearOptions = {
+    threshold: 0.2,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("appear");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => appearOnScroll.observe(fader));
+});

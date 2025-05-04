@@ -34,23 +34,26 @@
   </main>
 <section class="quote-section">
   <div class="ecg-container">
-    <svg class="ecg-line" viewBox="0 0 500 100" preserveAspectRatio="none">
-      <polyline 
-        fill="none"
-        stroke="url(#gradient)"
-        stroke-width="2"
-        points="0,50 30,50 35,40 40,60 45,50 80,50 90,30 100,70 110,50 500,50"
-      />
+    <svg class="ecg-line" viewBox="0 0 1000 100" preserveAspectRatio="none">
       <defs>
-        <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0">
+        <linearGradient id="ecg-gradient" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stop-color="#00ffae"/>
           <stop offset="100%" stop-color="#2ecc71"/>
         </linearGradient>
       </defs>
+      <polyline 
+        fill="none"
+        stroke="url(#ecg-gradient)"
+        stroke-width="2"
+        points="0,50 30,50 35,40 40,60 45,50 80,50 90,30 100,70 110,50 140,50 145,40 150,60 155,50 190,50 200,30 210,70 220,50 1000,50"
+      />
     </svg>
-    <p class="quote-text">"We do not just build devices—we build hope, healing, and the future of medicine."</p>
+    <p class="quote-text">
+      "We do not just build devices—we build <span class='glow'>hope</span>, <span class='glow'>healing</span>, and the <span class='glow'>future of medicine</span>."
+    </p>
   </div>
 </section>
+
 
   <script src="script.js"></script>
 </body>

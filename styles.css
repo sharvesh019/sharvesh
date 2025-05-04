@@ -99,13 +99,22 @@ a {
 
 /* Profile Image */
 .profile-container {
-  width: 380px;
-  height: 480px;
+  width: 400px;
+  height: 500px;
   overflow: hidden;
-  border-radius: 40% 60% 55% 45% / 50% 40% 60% 50%;
-  box-shadow: 0 0 30px rgba(168, 255, 96, 0.25);
-  transition: transform 0.3s;
+  border-radius: 50% 45% 40% 55% / 60% 40% 60% 40%;
+  box-shadow: 0 0 40px rgba(168, 255, 96, 0.25);
+  transition: transform 0.3s ease;
+  border: 3px solid #a8ff60;
 }
+
+.profile-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 .profile-container:hover {
   transform: scale(1.05);
 }

@@ -59,11 +59,10 @@ a {
   max-width: 50%;
 }
 .left-content h1 {
-  font-size: 4rem; /* or whatever original size you prefer */
+  font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-
 .highlight {
   color: #a8ff60;
 }
@@ -75,43 +74,33 @@ a {
   width: 0;
   animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
 }
-
 @keyframes typing {
   0% { width: 0; }
   90% { width: 100%; }
-  100% { width: 100%; border-right: 2px solid transparent; } /* Keep text visible, hide the cursor */
+  100% { width: 100%; border-right: 2px solid transparent; }
 }
-
 @keyframes blink {
-  50% { border-color: transparent; } /* This controls the blinking effect */
+  50% { border-color: transparent; }
 }
-
 
 .cta-button {
   margin-top: 2rem;
   display: inline-block;
-  padding: 0.8rem 1.6rem; /* Smaller padding for a smaller button */
+  padding: 0.8rem 1.6rem;
   background-color: #a8ff60;
   color: #003322;
   border-radius: 35px;
   font-weight: bold;
-  font-size: 1.1rem; /* Slightly bigger text for visibility */
-  text-transform: uppercase; /* Text becomes uppercase to highlight it */
+  font-size: 1.1rem;
+  text-transform: uppercase;
   transition: background 0.3s, transform 0.2s;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow effect for highlight */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .cta-button:hover {
   background-color: #7fe850;
-  transform: translateY(-2px); /* Button lift effect on hover */
+  transform: translateY(-2px);
 }
-
-.quote {
-  margin-bottom: 1rem; /* Adding more space below the quote */
-}
-
-
-
 
 /* Profile Image */
 .profile-container {
@@ -130,73 +119,8 @@ a {
   object-fit: cover;
 }
 
-
 .profile-container:hover {
   transform: scale(1.05);
-}
-.profile-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Section Placeholder */
-.section-placeholder {
-  padding: 100px 20px;
-  text-align: center;
-  background-color: #00382f;
-}
-
-/* Animations */
-.fade-in-left {
-  animation: fadeInLeft 1s ease forwards;
-}
-.fade-in-right {
-  animation: fadeInRight 1s ease forwards;
-}
-@keyframes fadeInLeft {
-  from { opacity: 0; transform: translateX(-50px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-@keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(50px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-/* Navbar Styling */
-.navbar {
-  background-color: #003322;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-.navbar .logo {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.navbar .nav-links {
-  list-style: none;
-  padding: 0;
-}
-
-.navbar .nav-links li {
-  display: inline-block;
-  margin: 0 1rem;
-}
-
-.navbar .nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 /* About Section Styling */
@@ -227,7 +151,7 @@ body {
 }
 
 .profile-pic:hover {
-  transform: scale(1.1); /* Hover effect */
+  transform: scale(1.1);
 }
 
 /* Subpage Cards Styling */
@@ -317,6 +241,7 @@ body {
 .fade-in-up {
   animation: fade-in-up 1s ease-out;
 }
+
 /* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
@@ -343,65 +268,18 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
-/* Slide-in from bottom */
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-/* Slide-in from left */
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Slide-in from right */
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Apply the animations to specific parts */
-.about-text {
-  animation: slideLeft 1s ease-in-out both;
-}
-
-.about-image img {
-  animation: slideRight 1s ease-in-out both;
-}
-
-.about-box {
-  animation: slideUp 1s ease-in-out both;
-}
-/* Control the padding and margin of all sections */
+/* Reducing the space between sections */
 .section {
-  padding: 2rem 0; /* Smaller padding */
+  padding: 2rem 0; /* Reduced padding for a tighter look */
   margin-bottom: 2rem; /* Reduced space between sections */
 }
 
-/* You can fine-tune the space for specific sections too */
+/* Specific Adjustments for Individual Sections */
 #landing {
   margin-bottom: 1rem; /* Tighter space after landing page */
 }
 
 #about, #projects, #contact {
-  margin-top: 1rem; /* Smaller gap when scrolling */
+  margin-top: 1rem; /* Reduced gap when scrolling */
 }
